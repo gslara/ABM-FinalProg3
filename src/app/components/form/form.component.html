@@ -1,0 +1,29 @@
+<div class="m-5">
+    <div class="mb-4">
+        <h4>Datos de la persona</h4>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Nombre</span>
+        </div>
+        <input type="text" id="nombre" class="form-control" placeholder="nombre" aria-label="nombre" aria-describedby="basic-addon1" [(ngModel)]="persona.nombre">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Apellido</span>
+        </div>
+        <input type="text" id="apellido" class="form-control" placeholder="apellido" aria-label="apellido" aria-describedby="basic-addon1" [(ngModel)]="persona.apellido">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">DNI</span>
+        </div>
+        <input type="text" id="dni" class="form-control" placeholder="dni" aria-label="dni" aria-describedby="basic-addon1" [(ngModel)]="persona.dni">
+    </div>
+
+    <button type="button" class="btn btn-success" (click)="save()">Guardar</button>
+    <button type="button" class="btn btn-danger ml-2" (click)="cancel()">Cancelar</button>
+
+</div>
